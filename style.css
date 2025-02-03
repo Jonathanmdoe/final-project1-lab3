@@ -4,10 +4,11 @@ body {
     margin: 20px;
 }
 
-h1 {
-    color: darkblue;
+ h1 {
+    color: red; /* Changed color in main */
     text-align: center;
     border-bottom: 2px solid black;
+}
 }
 
 p {
