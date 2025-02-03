@@ -4,8 +4,8 @@ body {
     margin: 20px;
 }
 
- h1 {
-    color: red; /* Changed color in main */
+h1 {
+    color: green; /* Changed color in css-styles */
     text-align: center;
     border-bottom: 2px solid black;
 }
