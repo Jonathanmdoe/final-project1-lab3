@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #e6faf7;
+  --foreground: #1e1b18;
+  --charcoal: #2a211f; /* dark chocolate accent */
+  --mint-50: #e6faf7;
+  --mint-100: #cef3ec;
+  --mint-200: #b2e6dd;
+  --mint-300: #97dacc;
+  --mint-700: #45a18c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-charcoal: var(--charcoal);
+  --color-mint-50: var(--mint-50);
+  --color-mint-100: var(--mint-100);
+  --color-mint-200: var(--mint-200);
+  --color-mint-300: var(--mint-300);
+  --color-mint-700: var(--mint-700);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0e1614;
+    --foreground: #e9fbf7;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom shadows to mimic the thick offset look */
+.shadow-hard {
+  box-shadow: 0 2px 0px 0 var(--charcoal), 0 10px 0 0 var(--charcoal);
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shadow-card {
+  box-shadow: 0 6px 0 0 var(--charcoal);
+}
