@@ -1,3 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand__icon">🏬</div>
+          <div class="brand__name">Business name</div>
+        </div>
+        <nav class="menu">
+          <div class="menu__section">MENU</div>
+          <a class="menu__item active" href="#">
+            <span class="menu__icon">🏠</span>
+            <span class="menu__label">Dashboard</span>
+          </a>
+          <a class="menu__item" href="#"><span class="menu__icon">🛒</span><span class="menu__label">Mauzo</span></a>
+          <a class="menu__item" href="#"><span class="menu__icon">📦</span><span class="menu__label">Bidhaa</span></a>
+          <a class="menu__item" href="#"><span class="menu__icon">💸</span><span class="menu__label">Matumizi</span></a>
+          <a class="menu__item" href="#"><span class="menu__icon">🧑</span><span class="menu__label">Wateja</span></a>
+          <a class="menu__item" href="#"><span class="menu__icon">🧾</span><span class="menu__label">Madeni</span></a>
+          <a class="menu__item" href="#"><span class="menu__icon">📝</span><span class="menu__label">Notes</span></a>
+
+          <div class="menu__section">MORE</div>
+          <a class="menu__item" href="#"><span class="menu__icon">🛍️</span><span class="menu__label">Online Shop</span></a>
+          <a class="menu__item" href="#"><span class="menu__icon">📈</span><span class="menu__label">Analytics</span></a>
+          <a class="menu__item" href="#"><span class="menu__icon">📑</span><span class="menu__label">Report</span></a>
+          <a class="menu__item" href="#"><span class="menu__icon">👥</span><span class="menu__label">Employees</span></a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="business-switcher">
+            <button class="chip">
+              <span>Business name</span>
+              <span class="caret">▾</span>
+            </button>
+            <button class="chip chip--accent">Dukalamtandao</button>
+            <a class="link" href="https://kuzabusiness.com" target="_blank" rel="noreferrer">https://kuzabusiness.com</a>
+            <button class="chip">KUZAPRO-PAID</button>
+          </div>
+          <div class="topbar__actions">
+            <button class="icon-btn" aria-label="notifications">🔔</button>
+            <button class="icon-btn" aria-label="help">❔</button>
+          </div>
+        </header>
+
+        <section class="stats">
+          <div class="stat-card">
+            <div class="stat-card__title">Mauzo</div>
+            <div class="stat-card__subtitle">Mwaka</div>
+            <div class="stat-card__value">Tsh. 0</div>
+          </div>
+          <div class="stat-card stat-card--pink">
+            <div class="stat-card__title">Matumizi</div>
+            <div class="stat-card__subtitle">Mwaka</div>
+            <div class="stat-card__value">Tsh. 0</div>
+          </div>
+          <div class="stat-card stat-card--blue">
+            <div class="stat-card__title">Bidhaa</div>
+            <div class="stat-card__subtitle">Mwaka</div>
+            <div class="stat-card__value">0</div>
+          </div>
+          <div class="upsell">
+            <div class="upsell__title">Kifurushi</div>
+            <p class="upsell__text">Umebakiza siku 6 za kutumia kuza business lipia kifurushi uendelee kukuza biashara yako</p>
+            <button class="btn">Lipia ▾</button>
+          </div>
+        </section>
+
+        <section class="panels">
+          <div class="panel">
+            <div class="panel__header">
+              <div class="panel__title">Mauzo kwa bidhaa</div>
+              <div class="segmented">
+                <button class="segmented__btn active">Leo</button>
+              </div>
+            </div>
+            <div class="table-scroll">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>MUDA</th>
+                    <th>BITHAA</th>
+                    <th>IDADI</th>
+                    <th>THAMANI</th>
+                    <th>JUMLA</th>
+                    <th>MUUZAJI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="6" class="empty">Hakuna data</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel__header">
+              <div class="panel__title">Mauzo</div>
+              <div class="segmented">
+                <button class="segmented__btn active">Wiki hii</button>
+              </div>
+            </div>
+            <canvas id="salesChart" height="160"></canvas>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+  </html>
+
 <!DOCTYPE html>
 <html>
    <head>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App-level styles */
+:root {
+  color-scheme: light;
+}
+
+/* Utility to emulate heavy drop shadow blocks */
+.deep-shadow { box-shadow: 12px 12px 0 rgba(30,0,0,.85); }
+.panel-shadow { box-shadow: 16px 16px 0 #1a0d0a; }
+
